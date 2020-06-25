@@ -66,7 +66,7 @@ function cari($keyword)
 {
 	$query = "SELECT * FROM buku WHERE 
 
-				judul LIKE '%$keyword%' OR penulis LIKE '%$penulis%' OR tahun LIKE '%$tahun%'";
+				judul LIKE '%$keyword%' OR penulis LIKE '%$keyword%' OR tahun LIKE '%$keyword%'";
 	return query($query);
 }
  ?>
